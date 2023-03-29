@@ -1,0 +1,841 @@
+body {
+    margin: 0;
+    background-color: #661F1E;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding-inline-start: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #F5F5F5;
+}
+
+p {
+    margin: 0;
+}
+
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+a.text:active, 
+a.text:hover, 
+a.text {
+  text-decoration: none;
+  color: #F5F5F5;
+}
+
+.container {
+    background: #F5F5F5;
+    margin: 0 auto;
+}
+
+.faceShop {
+    margin: 0 auto;
+    background: #1C1B1B;
+    height: 100%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 150px;
+    max-width: 1140px;
+    margin: 0 auto;
+    
+}
+
+.logoTitle {
+    display: flex;
+    background-image: url('./img/logoTitle.svg');
+    background-repeat: no-repeat;
+    width: 79px;
+    height: 15px;
+}
+
+
+.ul {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 30px;
+}
+
+.navItem {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 100%;
+    
+}
+
+.searchBuy {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.loupe {
+    cursor: pointer;
+}
+
+.shoppingCart {
+    cursor: pointer;
+}
+
+.menu {
+    max-height: 0;
+    text-align: end;
+    background-color: #f5f5f5;
+    color: #1C1B1B;
+    overflow: hidden;
+    transition: all 1s;
+    width: 100%;
+}
+
+.menu.active {
+    display: block;
+}
+
+.menu a {
+    color: #1C1B1B;
+}
+
+.menuBtns {
+    display: none;
+    flex-direction: column;
+    gap: 8px;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.menuBtns span {
+    width: 48px;
+    height: 6px;
+    border-radius: 10px;
+    background-color: #F5F5F5;
+
+}
+
+.menuBtns.active span:nth-of-type(2) {
+    display: none;
+}
+
+.menuBtns.active span:nth-of-type(1) {
+    transform: translateY(7px) rotate(45deg);  
+}
+
+.menuBtns.active span:nth-of-type(3) {
+    transform: translateY(-7px) rotate(-45deg); 
+}
+
+.burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.burgerItem {
+    padding: 34px 30px;
+    cursor: pointer;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30.659px;
+    line-height: 100%;
+}
+
+.burgerItem:first-child {
+    background-color: #D8D8D8;
+}
+
+.shoppingBag {
+    display: flex;
+    flex-direction: column;
+    max-width: 1140px;
+    margin: 0 auto;
+    max-height: 0;
+    overflow: hidden;
+    background-color: #F5F5F5;
+    transition: .5s;
+    overflow-x: scroll;
+    padding: 0 20px;
+}
+
+.cartTitle {
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 100%;
+    padding: 50px 0 0 0px;
+}
+
+.wishesList {
+    display: flex;
+    align-items: flex-start;
+    padding: 50px 0 47px;
+    gap: 30px;
+}
+
+.itemContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
+}
+
+.infoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.itemName {
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 100%;
+}
+
+.amountPrice {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+.addRemove {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.minusCounter {
+    width: 20px;
+    height: 20px;
+    background: #661F1E;
+    color: #F5F5F5;
+}
+
+.counter {
+    display: flex;
+    align-items: flex-start;
+    padding: 5px 15px;
+    gap: 10px;
+    width: 30px;
+    height: 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    
+    -webkit-appearance: none;
+    margin: 0; 
+}
+
+.plusCounter {
+    width: 20px;
+    height: 20px;
+    background: #661F1E;
+    color: #F5F5F5;
+}
+
+.priceForItem {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 100%;
+}
+
+.titleMessage {
+    display: flex;
+    margin: 0 auto;
+    gap: 30px;
+    max-width: 1440px;
+}
+
+.shopImg {
+    width: 100%;
+    height: 663px;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+}
+
+.getSolutions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 120px 0 0 30px;
+    gap: 64px;
+}
+
+.titleText {
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 82px;
+    line-height: 80%;
+    color: #F5F5F5;
+    width: 420px;
+}
+
+.shopDescriptions {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18.662px;
+    line-height: 100%;
+    display: flex;
+    align-items: center;
+    color: #F5F5F5;
+    width: 308px;
+}
+
+.shopNow {
+    padding: 16px 35px;
+    background: #661F1E;
+    color: #F5F5F5;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18.662px;
+    line-height: 23px;
+}
+
+.shopNow:hover {
+    background-color: #8E4746;
+    transition: 1s;
+}
+
+.hotProducts {
+    margin: 0 auto;
+    max-width: 1140px;
+}
+
+.pageTitle {
+    padding: 135px 0 52px 0;
+    margin: 0 auto;
+    max-width: 1140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.products {
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 44.2027px;
+    line-height: 100%;
+}
+
+.seeAll {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18.662px;
+    line-height: 100%;
+    cursor: pointer;
+    text-decoration: solid underline 1px;
+}
+
+.productsList {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.slide {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1140px;
+    gap: 30px;
+}
+
+.mainSofa {
+    padding-bottom: 50px;
+}
+
+.name {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.colors {
+    display: flex;
+    gap: 10px;
+}
+
+.green {
+    width: 25px;
+    height: 25px;
+    background-color: #6E7657;
+}
+
+.grey {
+    width: 25px;
+    height: 25px;
+    background-color: #C2B5A2;
+}
+
+.brown {
+    width: 25px;
+    height: 25px;
+    background-color: #816B57;
+}
+
+.productName {
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+}
+
+.price {
+    padding-top: 10px;
+}
+
+.doubleProducts {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+input[type = "radio"] {
+    position: relative;
+    height: 16px;
+    width: 16px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    background-color: #D8D8D8;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+input[type = "radio"]:checked {
+    background-color: #1C1B1B;
+}
+
+.furniture {
+    padding: 135px 0 30px 0;
+    display: flex;
+    gap: 30px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.furnitureDescription {
+    display: flex;
+    flex-direction: column;
+}
+
+.furnitureSofa {
+    width: 100%;
+    height: 521px;
+    object-fit: cover;
+    object-position: right;
+}
+
+.furnitureTable {
+    width: 100%;
+    height: 246px;
+    object-fit: cover;
+    object-position: left;
+}
+
+.sofa {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+    width: 245px;
+}
+
+.textDescription {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    padding: 0px 15px;
+}
+
+.productTitle {
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 44.2027px;
+    line-height: 100%;
+    padding: 39px 15px 0 15px;
+}
+
+.catalog {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18.662px;
+    line-height: 100%;
+    cursor: pointer;
+    text-decoration: solid underline 1px;
+    padding: 0px 15px 40px 15px;
+}
+
+.table {
+    display: flex;
+    justify-content: end;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 0 135px 0;
+    gap: 30px;
+}
+
+.ourNews {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.searchNews {
+    padding: 50px 0 135px 0 ;
+    display: flex;
+    gap: 30px;
+    max-width: 1140px;
+
+}
+
+.rightSofa {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.date {
+    display: flex;
+    gap: 15px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10.5026px;
+    line-height: 100%;
+    color:  #888888;
+}
+
+.advice {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.subHeader {
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24.8764px;
+    line-height: 100%;
+}
+
+.resolve {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 100%;
+}
+
+hr {
+    width: 100%;
+}
+
+.topIndent {
+    padding-top: 25px;
+}
+
+.indent {
+    padding-bottom: 45px;
+}
+
+.socialLink {
+    display: flex;
+    gap: 38px;
+    max-width: 1440px;
+    justify-content: end;
+    margin: 0 auto;
+    padding: 0 0 135px 0;
+}
+
+.footer {
+    background: #1C1B1B;
+}
+
+.footerInfo {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    padding: 135px 150px;
+    gap: 135px;
+    
+    max-width: 1140px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.rightsReserved {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    color: #F5F5F5;
+    width: 250px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 0 0 75px 0;
+}
+
+.additionalInformation {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;  
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.list a {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10.5026px;
+    line-height: 100%;
+    color: #888888;
+}
+
+.mainCaption a {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    color: #F5F5F5;
+    padding: 0 0 15px 0;
+}
+
+@media (max-width: 320px) {
+    .footerInfo {
+        padding: 20px;
+    }
+
+    .titleText {
+        font-size: 40px;
+    }
+
+    .shopDescriptions {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .hotProducts {
+        display: none;
+    }
+
+    .furniture {
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 0 30px 0;
+    }
+
+    .sofa {
+        flex-direction: column;
+    }
+
+    .furnitureDescription {
+        gap: 30px;
+    }
+
+    .socialLink {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .getSolutions {
+        padding: 45px 0;
+    }
+
+    .shopDescriptions {
+        width: 100%;
+    }
+
+    .titleText {
+        width: 100%;
+    }
+
+    .furnitureTable {
+        display: none;
+    }
+
+    .table {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .header {
+        padding: 42px 30px;
+        max-width: 500px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .searchBuy {
+        display: none;
+    }
+
+    .menuBtns {
+        display: flex;
+    }
+
+    .shopImg {
+        display: none;
+    }
+
+    .titleMessage {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.64), rgba(0, 0, 0, 0.64)), url('./img/shopImg.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .titleText {
+        font-family: 'Darker Grotesque';
+        font-style: normal;
+        font-weight: 700;
+        line-height: 80%;
+    }
+
+    .shopDescriptions {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%;
+    }
+
+    .shopNow {
+        padding: 30px 61px;
+    }
+
+    .furnitureSofa {
+        display: none;
+    }
+
+    .furniture {
+        justify-content: center;
+    }
+
+    .ourNewsImg {
+        display: none;
+    }
+}
+
+@media (max-width: 960px) {
+    .product_11 {
+        display: none;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .slide {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .doubleProducts {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .smallTable {
+        display: none;
+    }
+
+    .ourNews {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .searchNews {
+        flex-direction: column;
+        margin: 0 15px 0 15px;
+    }
+
+    .additionalInformation {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 1200px) {
+    .slide .loungeChair {
+        display: none;
+    }
+
+    .hotProducts {
+        max-width: 960px;
+    }
+
+    .product_12, .product_13 {
+        display: none;
+    }
+
+    .footer {
+        align-items: center;
+        justify-content: center;
+    }
+}
